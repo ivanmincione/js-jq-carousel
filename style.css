@@ -1,0 +1,57 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: rgb(64, 123, 161);
+    display: flex;
+    justify-content: center;
+}
+
+.carousel {
+    width: 1000px;
+    height: 600px;
+    /* background-color: white; */
+    /* border: 2px solid black; */
+    margin-top: 100px;
+    border-radius: 10px;
+}
+
+.arrow-left, .arrow-right {
+    float: left;
+    display: flex;
+    width: 50px;
+    height: 100%;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    
+}
+
+.arrow-left i, .arrow-right i {
+    color: white;
+    font-size: 40px;
+}
+
+
+.slides {
+    float: left;
+    width: calc(100% - 100px);
+    height: 100%;
+    position: relative;
+}
+
+.slides img {
+    display: none;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 10px;
+
+}
+
+.slides img.active {
+    display: block;
+}
