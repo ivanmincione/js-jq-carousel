@@ -17,6 +17,7 @@ body{
     /* border: 2px solid black; */
     margin-top: 100px;
     border-radius: 10px;
+    position: relative;
 }
 
 .arrow-left, .arrow-right {
@@ -27,7 +28,7 @@ body{
     justify-content: center;
     align-items: center;
     cursor: pointer;
-    
+
 }
 
 .arrow-left i, .arrow-right i {
@@ -54,4 +55,19 @@ body{
 
 .slides img.active {
     display: block;
+}
+
+.circle {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 20px;
+}
+
+.circle i {
+    color: grey;
+}
+
+.circle i.active {
+    color: white;
 }
